@@ -1,0 +1,7 @@
+#### author : "Andreas Tigasing; andreas.tigasing@khk.ee"
+#### Skript mis näitab mitu päeva masin töödanud on
+
+echo -n "Skriptime at " ## Sõne
+uptime | cut -f1 -d "," ## Masina kuupäev ja kellaeg ning kaua töödanud on
+
+#### Scriptimine lõppenud :P
