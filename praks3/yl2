@@ -1,0 +1,7 @@
+#### author : "Andreas Tigasing; andreas.tigasing@khk.ee"
+#### Script otsib var kaustas kõik kättesaadavad .var lõpuga failid
+
+find /var -name "*.log" -type f 2>/dev/null -exec wc -l {} + | sort -rn ## Leiab .var lõpuga failid
+
+#### Scripti lõpp
+
