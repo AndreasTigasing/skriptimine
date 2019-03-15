@@ -1,0 +1,13 @@
+#### author : "Andreas Tigasing; andreas.tigasing@khk.ee"
+#### Script väljastab minu muljeid enda saavutustest antud aines
+
+echo -n "Mina olen " ##Algus
+echo "Andreas Tigasing" ##Nimi
+echo -n "Õpin " ##Algus
+echo -n "ISP118 " ##Grupi nimi
+echo "grupis" ##Lõpp
+echo -n "Antud aine tundub " ##Algus
+echo "huvitav, hariv ja koostööd hõlmav." ##omadussõnad
+echo "Oskan pythoni keeles programeerida ning natukene skriptida." ##Lõpetus
+
+#### Scripti lõpp
