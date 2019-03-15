@@ -1,0 +1,15 @@
+#### author : "Andreas Tigasing; andreas.tigasing@khk.ee"
+#### Skript küsib kasutaja käest tema nime ning tervitab teda.
+
+echo " "
+echo " "
+echo " "
+echo -n "Sisestage oma ees- ja perenimi: " ## küsib nime
+read name surname ## Küsib nime
+echo "Tere tulemast, eesnimega $name ja perenimega $surname" ## Tervitab
+echo " "
+echo " "
+echo " "
+
+#### Scriptimine lõpetatud
+
