@@ -1,0 +1,12 @@
+#### author : "Andreas Tigasing; andreas.tigasing@khk.ee"
+#### Script väljastab antud kuupäeva ja kalendri
+
+echo -n "Today is " ## Täna on...
+echo `date +"%A, %B %d, %Y"` ##Näitab tänast kuupäev
+echo -n "Time is " ##Kell on
+echo `date +"%T"` ## Näitab kella aega (hours:sec)
+echo " " ## Tühi
+echo -n "Calender of" ## Kalendrist
+cal ## Näitab kalendrit
+
+#### Scripti lõpp
