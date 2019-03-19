@@ -1,0 +1,38 @@
+#### author : "Andreas Tigasing; andreas.tigasing@khk.ee"
+#### Küpsisetordi ülesanne
+
+## Küsimused
+
+echo "Sisesta aluskandiku pikkus(cm): " ##Küsimus
+read aluspikkus ##loeb vastust
+echo "Sisesta aluskandiku laius(cm): " ##küsimus
+read aluslaius ##loeb vastust
+echo "Sisestage küpsise pikkus(cm): " ##küsimus
+read kypspikkus ##loeb vastust
+echo "Sisestage küpsise laius(cm): " ##küsimus
+read kypslaius ##loeb vastust
+echo "Sisestage kihtide arv: " ##küsimus
+read kihid ##loeb vastust
+echo "Mitu küpsist on ühes pakis: " ##küsimus
+read pakis ##loeb vastust
+
+## Arvutamine
+
+laiusarv=$(expr $aluslaius / $kypslaius) ##arvutab laiuses olevate küpsiste arvu
+echo "Laiusena läheb" $laiusarv "küpsist" ##ütleb, et kui mitu tükki läheb käsureal
+sleep 2 ##ootab 2 sec et minna edasi järgmise käsuga
+pikkusarv=$(expr $aluspikkus / $kypspikkus) ##arvutab pikkuses olevate küpsiste arvu
+echo "Pikkusena läheb" $pikkusarv "küpsist" ##ütleb, et kui mitu küpsist läheb laiusesse.
+sleep 2 ##ootab 2 sec et minna edasi järgmise käsuga
+aluskord=$(expr $pikkusarv \* $laiusarv) ##arvutab aluses olevad küpsised
+echo "Alusena läheb kokku" $aluskord "Küpsist" ##ütleb kui mitu küpsist läheb alusesse
+sleep 2 ##ootab 2 sec et minna edasi järgmise käsuga
+kihidko=$(expr $aluskord \* $kihid) ##arvutab koos kihtidesse minevate küpsistega
+echo "Kokku tuleb" $kihidko "küpsist koogile" ##ütleb, et kui palju läheb küpsiseid kokku
+sleep 2 ##ootab 2 sec et minna edasi järgmise käsuga
+pakiarv=$(expr $kihidko / $pakis) ##arvutab, et kui mitu pakki küpsiseid on vaja
+echo "Kokku tuleb osta" $pakiarv "pakki küpsist" ##ütleb, mitu küpsise pakki on vaja osta
+echo "Oodake 5 sekundit, et küpsisetordi programm lõppeks." ##annab teada
+sleep 5 ##ootab 5 sec et minna edasi järgmise käsuga
+
+####Scripti lõpp
