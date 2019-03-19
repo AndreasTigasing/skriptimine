@@ -1,0 +1,24 @@
+#### author : "Andreas Tigasing; andreas.tigasing@khk.ee"
+#### Bussireisi ülesanne
+
+
+## Küsimused
+
+echo "Mitu reisijat tahab kaasa tulla?" ##küsimus
+read reis ##salvestab küsimuse
+echo "Mitu kohta on bussis?" ##küsimus
+read bussik ##salvestab küsimuse
+
+## Arvutamine
+
+bussia=`expr $reis / $bussik` ##arvutab bussi arvu
+echo "Tuleb tellida" $bussia "bussi." ##ütleb, palju tuleb tellida
+maha=`expr $bussia \* $bussik` ##arvutab, kui palju kokku mahub bussidesse
+maha1=`expr $reis - $maha` ##arvutab, kui palju maha jääb
+sleep 1 ##ootab 1 sec
+echo "AGA!" ##ütleb dramaatiliselt 'aga'
+sleep 1 ##ootab 1 sec
+echo "Maha jääb" $maha1 "reisijat" ##ütleb, kui palju maha jääb
+sleep 2 ##ootab 2 sec
+
+####Scripti lõpp
