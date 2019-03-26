@@ -1,0 +1,28 @@
+#### author = "Andreas Tigasing;andreas.tigasing@khk.ee"
+#### Puhkuse saabumise arvutamine
+
+echo "Pyhapaev - 0;
+Esmaspaev - 1;
+Teisipaev - 2;
+Kolmapaev - 3;
+Neljapaev - 4;
+Reede - 5;
+Laupaev - 6."
+
+## Küsimuste vastamine ning vastuste salvestamine
+
+echo -n "Sisestage millal soidad ara: "
+read paev
+echo -n "Sisestage oopaevade arv: "
+read oopaev
+
+## Arvutamine
+
+paevad=$(($oopaev % 7))
+vastus=$(($paev + $paevad))
+
+## vastuse andmine
+
+echo "Tagasi oled päeval number" $vastus"."
+
+#### Scripti lõpp
