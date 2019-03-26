@@ -1,0 +1,11 @@
+#### author : "Andreas Tigasing; andreas.tigasing@khk.ee"
+#### Pythagorase teoreem
+
+echo "Sisestage täisnurkse kolmnurga kaatet A sentimeetrites: "
+read a
+echo "Sisestage täisnurkse kolmnurga kaatet B sentimeetrites: "
+read b
+c=$(bc <<< "scale=2;sqrt($a^2 + $b^2)") ##scale näitab mitu arvu peale koma.sqrt märgistab ära et see k'õik läheb ruutjuure alla. ^2 ütleb, et mitu korda astendada
+echo "Täisnurkse kolmnurga hüpotees on" $c "cm"
+
+####Scripti lõpp
