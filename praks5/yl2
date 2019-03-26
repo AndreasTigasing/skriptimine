@@ -1,0 +1,24 @@
+####
+####
+
+## Küsime kolmnurka külje pikkused ning salvestame need.
+
+echo -n "Sisestage a kylje vaartus: "
+read a
+echo -n "Sisestage b kylje vaartus: "
+read b
+echo -n "Sisestage c kylje vaartus: "
+read c
+
+## Arvutame p väärtuse milleks on (a+b+c)/2 [scale näitab 3 kohta pärast koma]
+## Arvutame kolmnurga pindala Heroni valemi kaudu. [scale näitab 3 kohta pärast koma]
+
+p=$(bc <<< "scale=2;($a+$b+$c)/2")
+S=$(bc <<< "scale=3;sqrt($p * ($p - $a) * ($p - $b) * ($p - $c))")
+
+sleep 1
+echo "Pindala =" $S "ruutsentimeetrit"
+sleep 4
+
+
+#### Scripti lõpp
