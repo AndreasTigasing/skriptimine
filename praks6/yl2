@@ -1,0 +1,20 @@
+## author : "Andreas Tigasing; andreas.tigasing@khk.ee"
+## Bussireisi ülesanne
+
+## Küsimused
+
+read -p "Sisesta reisjate arv: " reis
+read -p "Sisestage kohtade arv bussis: " koht
+
+## Arvutamine
+
+bussiarv=$(expr $reis / $koht)
+jaak=$(($reis % $koht))
+
+if test $jaak -gt 0
+then bussiarv=$(($bussiarv + 1))
+fi
+
+echo "Tuleb tellida" $bussiarv "bussi."
+
+##
