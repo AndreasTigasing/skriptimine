@@ -1,0 +1,18 @@
+#!/bin/bash 
+# author = "Andreas Tigasing; andreas.tigasing@khk.ee"
+# Tuvastab paarisarve
+#
+
+read -p "Sisestage siia taisarv: " arv
+
+if (( $arv % 2==0 ))
+then
+	echo "See on paaris arv: " $arv
+else
+	echo "See on paaritu arv: " $arv
+fi
+
+#
+# Skripti lõpp
+#
+#
