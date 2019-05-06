@@ -1,0 +1,8 @@
+read -p "Sisesta kataloogi nimi mida tahad pakkid:" kataloog #loeb kataloogi mida pakkida
+
+read -p "Sisestage kaust kuhu tahate backup-ida:" backup # asukoha valimine kuhu salvestada
+
+tar -czf test.tar.gz $kataloog # Teeb soovitud sisust pakitud faili
+mv test.tar.gz $backup #paigutab faili sinna kausta kuhu ennist sooviti
+
+echo "kataloogi $kata backup-i nimeks on $kata.tar.gz ja ta asub $backup" #vastus
