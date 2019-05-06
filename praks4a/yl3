@@ -1,4 +1,6 @@
+read -p "Millist kaustast soovite backupi teha? " kaust
+koht="/home/user/skriptimine/praks4a/backup"
 
-tar -czf /home/user/skriptimine/praks4a/backup/test.tar.gz /home/user/skriptimine/praks4a/test #pakib test kausta ning paneb backup kausta
+tar -czf $fail.tar.gz $kaust #pakib test kausta ning paneb backup kausta
 
-echo "kataloogi /home/user/skriptimine/praks4a/test/ backup-i nimi on test.tar.gz ja ta asub /home/user/skriptimine/prask4a/backup/ kataloogis" # Annab vastuse, mida ja kuhu tehti
+echo "Kaustast $kaust on backupitud asukohta $koht." # Annab vastuse, mida ja kuhu tehti
