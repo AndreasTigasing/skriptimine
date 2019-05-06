@@ -1,0 +1,10 @@
+
+
+read -p "Sisesta oma nimi: " nimi # nime sisestus
+echo "Tere tulemast, $nimi!" # tervitus
+
+read -p "Sisesta oma sünniaasta: " sunniaasta # sünniaasta sisestus
+aasta=$(date +"%Y") # aastaarvu lisamine variablesse
+
+vanus=$[$aasta - $sunniaasta] # arvuab vanuse
+echo "$nimi, sa oled $vanus aastat vana." # vastus
