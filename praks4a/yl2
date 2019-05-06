@@ -1,0 +1,8 @@
+read -p "Sisesta oma ringi raadius (cm):" r #raadiuse sisestamine
+
+pindala=`echo "3.14 * ( $r * $r )" | bc` #pindala arvutamine
+umber=`echo "2 * 3.14 * $r" | bc` #umberringi arvutamine
+
+echo "Sinu ringi pindala on $pindala cm2 ja ümbermõõt on $umber cm." #vastus
+
+
