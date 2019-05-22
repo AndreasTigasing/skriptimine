@@ -1,0 +1,9 @@
+#! /bin/bash
+#
+#
+
+for a in 1 2 3 4 5 #tsükkel
+do #alustab do kasuga
+	echo "$a *****" #echob  selle
+done #lõpetab  do kasu
+
