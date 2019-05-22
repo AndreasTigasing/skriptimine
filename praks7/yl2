@@ -1,0 +1,41 @@
+#!/bin/bash
+#
+######################################################
+# author= "Andreas Tigasing; andreas.tigasing@khk.ee"#
+######################################################
+#
+# kuu jargi aastaaja valjastus
+#
+# Värvid
+
+valge='\033[1;34m'
+roheline='\033[1;32m'
+kollane='\033[1;33m'
+oranz='\033[0;33m'
+punane='\033[0;31m'
+nc='\033[0m'
+
+# sisend
+
+read -p "Sisestage kuu number: " kuu
+
+# algoritm
+
+if test $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12
+then
+	echo -e "${valge}Praegu on Talv${nc}"
+
+elif test $kuu -ge 3 -a $kuu -le 5
+then
+	echo -e "${roheline}Praegu on Kevad${nc}"
+
+elif test $kuu -ge 6 -a $kuu -le 8
+then
+	echo -e "${kollane}Praegu on Suvi${nc}"
+
+elif test $kuu -ge 9 -a $kuu -le 11
+then
+	echo -e "${oranz}Praegu on Sugis${nc}"
+else
+	echo -e "${punane}ANTUD KUU NUMBRIT EI OLE!${nc}"
+fi
