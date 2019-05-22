@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#
+
+read -p "Sisestage arv: " arv #sisestus
+summa=0
+for (( arv=1; arv<11; arv++)) #tsükli kontroll
+	do #alustab
+	jaak=$(($arv %2)) #arvutab
+	if [ $jaak == 0 ] #arvutab
+	then
+		summa=$(( $summa + $arv )) #arvutab
+		echo $summa #näitab summa vastust
+	fi #lõpetab if kasu
+	done #lõpetab do kasu
+echo "Arvude summa on: $summa" #näitab lõplikku vastus
+
