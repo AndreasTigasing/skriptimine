@@ -1,0 +1,17 @@
+#! /bin/bash
+#
+#
+
+read -p "Sisesta ridade arv: " a #loeb sisestatud ridade arvu
+read -p "Sisesta tärnide arv read: " b #loeb sisestatud tarnide arvu
+for (( i = 1; i <= a; i++ )) #tsükkli algus
+do #so kasu algus
+echo "$i" #echob 
+for (( j = 1; j <= b; j++ )) #tsükkli algus
+do #alustab tegevust
+echo "*" #echob tärni
+done #lõpetab do kasu
+echo "" #lisab tühiku
+done #lõpetab do kasu
+done #lõpetab do kasu
+
