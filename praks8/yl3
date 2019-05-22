@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#
+
+read -p "Sisestage kuu arv: " kuu #loeb kuu numbri
+case $kuu in #alustab case käsku
+"1") echo "Jaanuar";; #kui on 1 siis on jaanuar
+"2") echo "Veebruar";; #kui on 2 siis on veebruar
+"3") echo "Märts";; #kui on 3 siis on märts
+"4") echo "Aprill";; #kui on 4 siis on aprill
+"5") echo "Mai";; #kui on 5 siin on mai
+"6") echo "Juuni";; #kui on 6 siis on juuni
+"7") echo "Juuli";; #kui on 7 siis on juuli
+"8") echo "August";; #kui on 8 siis on august
+"9") echo "September";; #kui on 9 siis on september
+"10") echo "Oktoober";; #kui on 10 siis on oktoober
+"11") echo "November";; #kui on 11 siis on november
+"12") echo "Detsember";; #kui on 12 siis on detsember
+*) echo "Vigane Sisend!" #kui on midagi muud siis ütleb vigane sisend
+esac #lõpetab case käsu
+
