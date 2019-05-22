@@ -1,0 +1,42 @@
+#!/bin/bash
+#### author = "Andreas Tigasing; andreas.tigasing@khk.ee"
+#
+#Vanus skript
+
+#värvid
+
+red='\033[0;31m'
+nc='\033[0m'
+
+#sisend
+read -p "Palun sisestage oma vanus: " vanus
+
+#########################################################
+
+if [ "$vanus" -ge 0 ] && [ "$vanus" -le 11 ]
+then
+	echo "Sa oled $vanus aastane laps."
+
+#########################################################
+
+elif [ "$vanus" -ge 12 ] && [ "$vanus" -le 18 ]
+then
+	echo "Sa oled $vanus aastane nooruk."
+
+#########################################################
+
+elif [ "$vanus" -ge 18 ] && [ "$vanus" -le 30 ]
+then
+	echo "Sa oled $vanus aastane täiskasvanu."
+
+#########################################################
+
+elif [ "$vanus" -ge 63 ]
+then
+	echo "Sa oled $vanus aastane senioor."
+
+#########################################################
+
+else
+	echo -e "${red}Vigane Sisend${nc}"
+fi
