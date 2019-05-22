@@ -1,0 +1,23 @@
+#! /bin/bash
+####################################################
+#Andreas Tigasing; andreas.tigasing@khk.ee
+####################################################
+
+kell=$(date +%H) #võtb date commanist aja
+if [[ $kell -ge 6 ]] && [[ $kell -le 11 ]] #alustab tsükkliga
+then
+	echo "Tere hommikust, $USER!" #Tervitab kasutajat arvuti kella järgi
+elif [[ $kell -ge 12 ]] && [[ $kell -le 17 ]]
+then
+	echo "Tere päeavast, $USER!"
+elif [[ $kell -ge 18 ]] && [[ $kell -le 21 ]]
+then
+	echo "Tere õhtust, $USER!"
+elif [[ $kell -ge 22 ]] && [[ $kell -le 24 ]]
+then
+	echo "Head ööd, $USER!"
+else
+	echo "Vigane sisend" #kui puudub kellaaeg siis ütleb et vigane sisend
+fi #lõpetab if kasu
+#
+
