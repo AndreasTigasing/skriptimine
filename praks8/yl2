@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#
+
+read -p "Sisestage arv: " arv #palub kasutajal sisestada arvu
+summa=0 
+while [ $arv -ne 0 ] #tsükkel
+do #alustab tegemist
+jaak=$(($arv % 10)) #arvutab
+summa=$(($summa + $jaak)) #arvutab
+arv=$(($arv / 10)) #arvutab
+done #lõpetab do kasu
+echo "$summa" #väljastab summa
+
+#skripti lõpp
