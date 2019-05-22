@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#
+
+read -p "Sisestage suvaline number: " number #loeb sisestust
+i=2
+while [ $i -lt $number ] #tsükkli algus
+do # alustab do kasuga
+if [ `expr $number % $i` -eq 0 ] #alustab if kasuga
+then 
+echo "$number - ei ole algarv" #ütleb kas on v ei
+echo "Kuna seda saab jagada $i"
+exit
+fi
+i=`expr $i + 1` #tsükkli arvu lisamine
+done
+echo "$number - on algarv " #ütleb, et kas on algarv v ei
